@@ -1,0 +1,20 @@
+:root{--bg:#0b0f17;--panel:#121a26;--line:#1f2b3d;--text:#dbe4f0;--muted:#8a9ab0;--acc:#38e1b0;--acc2:#7aa2ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:var(--acc2)}a:hover{color:var(--acc)}
+header{display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;align-items:center;justify-content:space-between;padding:.9rem 1.2rem;border-bottom:1px solid var(--line);background:#0d131d;position:sticky;top:0}
+.brand{color:var(--acc);font-weight:700;text-decoration:none;font-family:ui-monospace,Menlo,monospace}.brand span{color:var(--text)}
+nav{display:flex;flex-wrap:wrap;gap:.3rem .9rem}nav a{color:var(--muted);text-decoration:none;font-size:.93rem}nav a:hover{color:var(--acc)}
+main{max-width:52rem;margin:0 auto;padding:1.5rem 1.2rem 3rem}
+h1{font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.2}h2{font-size:1.2rem;color:var(--acc);margin-top:2rem;font-family:ui-monospace,Menlo,monospace}
+.kicker{color:var(--muted);font-family:ui-monospace,monospace;font-size:.85rem;margin:0}
+.answer,.analogy,.sponsor,.hero{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:.4rem 1.2rem 1rem}
+.analogy{border-left:4px solid var(--acc)}.hero{padding:1.2rem}
+.cite{font-size:.78rem;font-family:ui-monospace,monospace;text-decoration:none;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:.8rem}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:1rem;color:var(--text);text-decoration:none}.card:hover{border-color:var(--acc)}
+.btn{display:inline-block;background:var(--acc);color:#04110c;padding:.5rem 1rem;border-radius:8px;text-decoration:none;font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:.93rem}td,th{border-bottom:1px solid var(--line);padding:.45rem;text-align:left;vertical-align:top}
+.src li{margin:.3rem 0;font-size:.92rem}.src li:target{background:#173027}
+form{display:grid;gap:.6rem;max-width:24rem}input,button{font:inherit;padding:.6rem;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--text)}
+footer{border-top:1px solid var(--line);color:var(--muted);text-align:center;padding:1rem;font-size:.9rem}
+@media(max-width:600px){header{position:static}body{font-size:16px}}

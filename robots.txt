@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sm902932-yo.github.io/lostbyte-field-guide/sitemap.xml
